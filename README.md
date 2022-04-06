@@ -1,1 +1,1 @@
-This is th python example project
+This is the python example project
