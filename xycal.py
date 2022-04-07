@@ -1,7 +1,7 @@
 a = input("x=")
-X = int(a)
+x = int(a)
 b = input("Y=")
-Y = int(b)
+y = int(b)
 
 def xpery(X,Y):
     for i in range(1,X):
@@ -9,13 +9,16 @@ def xpery(X,Y):
             print(i)
 
 
-def xeven(X,Y):
+def xeven(X):
+    lst = []
     for i in range(1,X):
         if i % 2 == 0:
-            print(i)
+            lst.append(i)
+    return lst
 
-print("XまでのうちYで割り切れるのは")
-xpery(X,Y)
+#print("XまでのうちYで割り切れるのは")
+#xpery(X,Y)
 
 print("Xまでの偶数は")
-xeven(X,Y)
+result = xeven(x)
+print(result)
