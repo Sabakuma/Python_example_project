@@ -16,8 +16,6 @@ def xeven(X):
             lst.append(i)
     return lst
 
-#print("XまでのうちYで割り切れるのは")
-#xpery(X,Y)
 
 print("Xまでの偶数は")
 result = xeven(x)
