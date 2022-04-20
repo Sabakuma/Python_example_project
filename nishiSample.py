@@ -1,4 +1,4 @@
-
+import sampleClass
 def getEvenList(targetNo:int):
     lst = []
     for i in range(1,targetNo):
@@ -6,14 +6,13 @@ def getEvenList(targetNo:int):
             lst.append(i)
     return lst
 
-
 if __name__ == '__main__':
-    
-    targetNumber = input("input : Target Number -> ")
 
-    while targetNumber.isnumeric() == False :
-        targetNumber = input("input : Target Number -> ")
+    # result = "nnnn"
+    # targetNumber = input("input : Target Number -> ")
+    # while targetNumber.isnumeric() == False :
+    #     targetNumber = input("input : Target Number -> ")    
+    # evenList = getEvenList(int(targetNumber))
+    # print(evenList)
     
-    evenList = getEvenList(int(targetNumber))
-
-    print(evenList)
+    c = sampleClass.SampleClass.method1()
