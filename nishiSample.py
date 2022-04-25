@@ -1,18 +1,10 @@
-import sampleClass
-def getEvenList(targetNo:int):
-    lst = []
-    for i in range(1,targetNo):
-        if i % 2 == 0:
-            lst.append(i)
-    return lst
+import nishiSampleClass
 
 if __name__ == '__main__':
 
-    # result = "nnnn"
-    # targetNumber = input("input : Target Number -> ")
-    # while targetNumber.isnumeric() == False :
-    #     targetNumber = input("input : Target Number -> ")    
-    # evenList = getEvenList(int(targetNumber))
-    # print(evenList)
+    animals = nishiSampleClass.AnimalHandling.createAllAnimalInfo()
     
-    c = sampleClass.SampleClass.method1()
+    animal : nishiSampleClass.Animal
+    for animal in animals:
+       remainLife = animal.calculateDiff()
+       print(f"{animal.animalName}:{remainLife}")

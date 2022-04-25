@@ -1,15 +1,28 @@
+from enum import Enum
+
+class animalType(Enum):
+    DOG = 1
+    CAT = 2
+    PIG = 3
+    RABBIT = 4
+
+FIELD_NAME_ID = "Id"
+FIELD_NAME_CATEGORY = "Category"
+FIELD_NAME_NAME = "Name"
+FIELD_NAME_AGE = "Age"
+
 def getAnimalData():
     return [
-        {"Id":1, "Category":"Dog","Name":"DOG-A", "Age":9},
-        {"Id":2, "Category":"Dog","Name":"DOG-B", "Age":5},
-        {"Id":3, "Category":"Dog","Name":"DOG-C", "Age":7},
-        {"Id":4, "Category":"Cat","Name":"CAT-A", "Age":8},
-        {"Id":5, "Category":"Cat","Name":"CAT-B", "Age":4},
-        {"Id":6, "Category":"Cat","Name":"CAT-C", "Age":6},
-        {"Id":7, "Category":"Pig","Name":"PIG-A", "Age":3},
-        {"Id":8, "Category":"Pig","Name":"PIG-B", "Age":9},
-        {"Id":9, "Category":"Pig","Name":"PIG-C", "Age":18},
-        {"Id":10, "Category":"Rabbit","Name":"RAB-A", "Age":4},
-        {"Id":11, "Category":"Rabbit","Name":"RAB-B", "Age":16},
-        {"Id":12, "Category":"Rabbit","Name":"RAB-C", "Age":11}
+        {FIELD_NAME_ID:1, FIELD_NAME_CATEGORY:animalType.DOG.value,FIELD_NAME_NAME:"DOG-A", FIELD_NAME_AGE:9},
+        {FIELD_NAME_ID:2, FIELD_NAME_CATEGORY:animalType.DOG.value,FIELD_NAME_NAME:"DOG-B", FIELD_NAME_AGE:5},
+        {FIELD_NAME_ID:3, FIELD_NAME_CATEGORY:animalType.DOG.value,FIELD_NAME_NAME:"DOG-C", FIELD_NAME_AGE:7},
+        {FIELD_NAME_ID:4, FIELD_NAME_CATEGORY:animalType.CAT.value,FIELD_NAME_NAME:"CAT-A", FIELD_NAME_AGE:8},
+        {FIELD_NAME_ID:5, FIELD_NAME_CATEGORY:animalType.CAT.value,FIELD_NAME_NAME:"CAT-B", FIELD_NAME_AGE:4},
+        {FIELD_NAME_ID:6, FIELD_NAME_CATEGORY:animalType.CAT.value,FIELD_NAME_NAME:"CAT-C", FIELD_NAME_AGE:6},
+        {FIELD_NAME_ID:7, FIELD_NAME_CATEGORY:animalType.PIG.value,FIELD_NAME_NAME:"PIG-A", FIELD_NAME_AGE:3},
+        {FIELD_NAME_ID:8, FIELD_NAME_CATEGORY:animalType.PIG.value,FIELD_NAME_NAME:"PIG-B", FIELD_NAME_AGE:9},
+        {FIELD_NAME_ID:9, FIELD_NAME_CATEGORY:animalType.PIG.value,FIELD_NAME_NAME:"PIG-C", FIELD_NAME_AGE:18},
+        {FIELD_NAME_ID:10, FIELD_NAME_CATEGORY:animalType.RABBIT.value,FIELD_NAME_NAME:"RAB-A", FIELD_NAME_AGE:4},
+        {FIELD_NAME_ID:11, FIELD_NAME_CATEGORY:animalType.RABBIT.value,FIELD_NAME_NAME:"RAB-B", FIELD_NAME_AGE:16},
+        {FIELD_NAME_ID:12, FIELD_NAME_CATEGORY:animalType.RABBIT.value,FIELD_NAME_NAME:"RAB-C", FIELD_NAME_AGE:11}
     ]
